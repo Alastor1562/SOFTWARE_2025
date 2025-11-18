@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro CSS</title>
+    <style>
+        h1 {
+            font-size: 2.5em;
+            color: rgb(95, 5, 131);
+            text-align: center;
+            text-shadow: 5px 5px 5px rgba(66, 5, 5, 0.3);
+        }
+
+        .key {
+            font-size: 1em;
+            color: rgb(176, 6, 6);
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 1em;
+            color: black;
+            line-height: 1.6;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 16px;
+            margin: 10px;
+            padding: 5px 10px;  /* pared, piso & Lados */
+        }
+
+        p:hover {
+            background-color: #ccc;
+        }
+
+        body {
+            background-color: #9d9aac;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+        }
+
+        p.ng1 {
+            font-size: 1.5em;
+            color: rgb(27, 51, 175);
+            font-weight: bold;
+            text-align: center;
+            background-color: rgb(199, 148, 224);
+            font-style: italic;
+        }
+
+        p.ng2 {
+            font-size: 1em;
+            color: black;
+            text-align: justify;
+        }
+
+        #faltante {
+            font-size: 1em;
+            color: rgb(229, 5, 5);
+            background-color: rgb(54, 24, 24);
+            text-align: center;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h1.gradiente {
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 200%;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        .boton {
+            display: inline-block; 
+            background-color: rgb(200, 0, 0);
+            color: white;
+            font-weight: bold;
+            font-size: 1.5em;
+            text-align: center;
+            padding: 15px 25px;
+            border-radius: 50px;
+            /* box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4); */
+            margin: 20px auto;
+            cursor: pointer;
+        }
+
+        .boton:hover {
+            background-color: rgb(255, 0, 0);
+            box-shadow: 0px 0px 20px rgba(56, 11, 69, 0.5), 0px 0px 40px rgba(30, 95, 20, 0.5) ;
+            transform: scale(1.05);
+
+        }
+        
+        </style>
+</head>
+<body>
+    <h1>CSS Basics</h1>
+    <p class='ng1'>¿Qué es CSS?</p>
+    <p class="ng2"><span class="key">CSS</span> (Cascading Style Sheets) es un lenguaje utilizado para describir la presentación de un documento HTML. Permite controlar el diseño, los colores, las fuentes y otros aspectos visuales de una página web.</p>
+    <p class="ng1">Selectores de CSS</p>
+    <p id='faltante' class="ng2">[Insertar contenido sobre selectores de CSS]</p>
+    <h1 class="gradiente">Prueba de Gradiente</h1>
+    <p class="boton">NO PRESIONAR</p>
+
+</body>
+</html>
